@@ -1,0 +1,116 @@
+Added Component: Designator=MD1(FP-ESP32-WROOM-32-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Data Rate"; Value = "150Mbps"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "2.5GHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Supply Voltage"; Value = "3.6V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "550"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensitivity"; Value = "-98dBm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "0.088185oz"; VariantName = "[No Variations]"
+Added Component: Designator=P1(HDR1X2)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P2(HDR1X4)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R1(J1-0603)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "J1-0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Added Component: Designator=R2(J1-0603)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "J1-0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Added Component: Designator=U1(FRES-2153-01_V)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.freescale.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Rev. 3.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "fSCL@20 pF"; Value = "4 MHz Max."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "fSCL@400 pF"; Value = "400 KHz Max."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Freescale Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-40 to 85 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Rev. O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packing"; Value = "Tray"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "MPL3115A2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "TRUE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDD"; Value = "1.95 to 3.6 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDDIO"; Value = "1.62 to 3.6 V"; VariantName = "[No Variations]"
+Added Component: Designator=U2(FP-SOT1676-1-IPC_A)
+Add component (AddParameter): Name = "Axis"; Value = "X, Y, Z"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Bandwidth"; Value = "400Hz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "QFN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interface"; Value = "I2C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Supply Voltage"; Value = "3.6V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Supply Voltage (DC)"; Value = "3.6V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Supply Voltage"; Value = "1.95V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Supply Voltage (DC)"; Value = "1.95V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Type"; Value = "Digital"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resolution"; Value = "14b"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensor Type"; Value = "3 Axis"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "0.001122oz"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U2-5
+Added Pin To Net: NetName=GND Pin=U2-7
+Added Net: Name=GND
+Added Pin To Net: NetName=NetMD1_1 Pin=MD1-1
+Added Pin To Net: NetName=NetMD1_1 Pin=P1-2
+Added Net: Name=NetMD1_1
+Added Pin To Net: NetName=NetMD1_25 Pin=MD1-25
+Added Pin To Net: NetName=NetMD1_25 Pin=P1-1
+Added Net: Name=NetMD1_25
+Added Pin To Net: NetName=NetMD1_33 Pin=MD1-33
+Added Pin To Net: NetName=NetMD1_33 Pin=R1-2
+Added Pin To Net: NetName=NetMD1_33 Pin=U1-7
+Added Pin To Net: NetName=NetMD1_33 Pin=U2-6
+Added Net: Name=NetMD1_33
+Added Pin To Net: NetName=NetMD1_34 Pin=MD1-34
+Added Pin To Net: NetName=NetMD1_34 Pin=P2-4
+Added Net: Name=NetMD1_34
+Added Pin To Net: NetName=NetMD1_35 Pin=MD1-35
+Added Pin To Net: NetName=NetMD1_35 Pin=P2-3
+Added Net: Name=NetMD1_35
+Added Pin To Net: NetName=NetMD1_36 Pin=MD1-36
+Added Pin To Net: NetName=NetMD1_36 Pin=R2-1
+Added Pin To Net: NetName=NetMD1_36 Pin=U1-8
+Added Pin To Net: NetName=NetMD1_36 Pin=U2-4
+Added Net: Name=NetMD1_36
+Added Pin To Net: NetName=VCC Pin=MD1-2
+Added Pin To Net: NetName=VCC Pin=MD1-3
+Added Pin To Net: NetName=VCC Pin=P2-1
+Added Pin To Net: NetName=VCC Pin=R1-1
+Added Pin To Net: NetName=VCC Pin=R2-2
+Added Pin To Net: NetName=VCC Pin=U1-1
+Added Pin To Net: NetName=VCC Pin=U2-14
+Added Net: Name=VCC
+Added Class: Name=Sheet5
