@@ -1,21 +1,20 @@
 #include <BluetoothSerial.h>
-#include "SparkFunLSM6DSO.h"
+#include <Adafruit_MPL3115A2.h>
+#include <Adafruit_MMA8451.h>
+#include <Adafruit_Sensor.h>
 #include <SerialCommand.h>
 #include "Wire.h"
 #include <iostream>
 #include <vector>
 //#include "SPI.h"
-
-LSM6DSO myIMU; // Default constructor is I2C, addr 0x6B
+Adafruit_MPL3115A2 mpl;
+Adafruit_MMA8451 mma = Adafruit_MMA8451();
 std::vector<float> accellx = {};
 std::vector<float> accelly = {};
 std::vector<float> accellz = {};
 
-std::vector<float> gyrox = {};
-std::vector<float> gyroy = {};
-std::vector<float> gyroz = {};
+std::vector<float> height = {};
 
-std::vector<float> tempc = {};
 
 SerialCommand sCmd(Serial); // the SerialCommand parser object
 
@@ -45,71 +44,50 @@ std:: cout << '[';
 std:: cout << ']';
 
 std:: cout << '[';  
- for (float i: gyrox)
+ for (float i: height)
     std::cout << i << ',';
 std:: cout << ']';
 
-std:: cout << '[';  
- for (float i: gyroy)
-    std::cout << i << ',';
-std:: cout << ']';
-
-std:: cout << '[';  
- for (float i: gyroz)
-    std::cout << i << ',';
-std:: cout << ']';
-
-std:: cout << '[';  
- for (float i: tempc)
-    std::cout << i << ',';
-std:: cout << ']';
 }
 
 void setup()
 {
-
+  
   Serial.begin(115200);
   delay(500);
 
   Wire.begin();
   delay(10);
-  if (myIMU.begin())
-    Serial.println("Ready.");
-  else
-  {
-    Serial.println("Could not connect to IMU.");
-    Serial.println("Freezing");
-  }
-
-  if (myIMU.initialize(BASIC_SETTINGS))
-    Serial.println("Loaded Settings.");
-
   sCmd.addCommand("Rocket.Read?", Read_Data);
   sCmd.setDefaultHandler(UNRECOGNIZED_sCmd_default_handler);
+  mpl.setMode(MPL3115A2_BAROMETER);
+  mma.setRange(MMA8451_RANGE_2_G);
 }
 
 void loop()
 {
   int counter = 0;
-  while ()
-  {
-    
-  }
+
   
-  while (myIMU.readFloatAccelX() != 0 && myIMU.readFloatAccelY() != 0 && myIMU.readFloatAccelZ() != 0 || counter > 65530)
+  while (counter < 250000)// flies 40 seconds before readout
   {
+    mpl.startOneShot();
+    while (!mpl.conversionComplete())
+    {
+    
+    }
     counter++;
+    mma.read();
+    sensors_event_t event; 
+    mma.getEvent(&event);
     // Get all parameters
-    accellx.push_back(myIMU.readFloatAccelX());
-    accelly.push_back(myIMU.readFloatAccelY());
-    accellz.push_back(myIMU.readFloatAccelZ());
+    accellx.push_back(event.acceleration.x);
+    accelly.push_back(event.acceleration.y);
+    accellz.push_back(event.acceleration.z);
 
-    gyrox.push_back(myIMU.readFloatGyroX());
-    gyroy.push_back(myIMU.readFloatGyroY());
-    gyroz.push_back(myIMU.readFloatGyroZ());
+    height.push_back(mpl.getLastConversionResults(MPL3115A2_PRESSURE));
 
-    tempc.push_back(myIMU.readTempC());
-    delayMicroseconds(160);
+    delayMicroseconds(150);
   }
   while (true)
   {
